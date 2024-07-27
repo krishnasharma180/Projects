@@ -6,6 +6,7 @@
 
 }
 
+
 h1{
   height:5rem;
 background-color: black;
@@ -70,3 +71,12 @@ border-radius: 50%;
  font-size: 30px;
 border-radius: 10px;}
 
+
+@media(max-width:588px){
+  .choices{
+    gap: 1.5rem;
+  }
+  .msg-container{
+margin-left:150px;
+  }
+}

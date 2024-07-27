@@ -17,7 +17,6 @@ body{
 .game{
   height: 60vmin;
   width: 60vmin;
-  background-color: chocolate;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
