@@ -861,7 +861,7 @@ gap: 60px;
   } 
 
    .cards {
-    width: 95%; 
+    width: 100%; 
     max-width: 100%; 
   } 
   .cards p{
@@ -981,7 +981,7 @@ gap: 60px;
   }
 
 .para{
-  width: 95%;
+  width: 100%;
 }
   .icon {
     font-size: 40px;
