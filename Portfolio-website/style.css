@@ -109,6 +109,7 @@ header{
   text-shadow: 0 0 20px cyan,
   0 0 20px cyan, 0 0 20px cyan, 0 0 50px  cyan; 
 }
+
 .btn{
   width: 200px;
   background: cyan;
@@ -117,8 +118,8 @@ header{
 color: rgb(0, 98, 255);
   height: 50px;
   border-radius: 40px;
-  margin-left: 220px;
-  margin-top: 50px;
+  margin: 50px 250px;
+ 
   box-shadow: 0 0 5px cyan, 0 0 25px cyan;
   border: none;
   animation: slideLeft 1s ease;
@@ -143,8 +144,9 @@ color: rgb(0, 98, 255);
   background-size: cover;
 }
 /* About section */
+
 .About-me{
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-image: url("images/Background.png");
   background-size: cover;
@@ -207,10 +209,10 @@ margin-top: 80px;
   color: cyan;
 }
 .container{
-  width: 80vw;
+  width: 100vw;
   height: 50vh;
 margin-top: 100px;
-margin-left: 130px;
+
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -381,7 +383,7 @@ opacity: 0;
   align-items: flex-start;
 }
 
-.radial-bars .radial-bar{
+ .radial-bar{
   width: 50%;
   height: 170px;
   margin-bottom: 10px;
@@ -392,7 +394,7 @@ opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50% ,-50%) rotate(-90deg);
-  width: 170px;
+  width: 150px;
   height: 160px;
 }
 
@@ -438,7 +440,7 @@ opacity: 0;
 } 
 
 .radial-bar .text{
-  width: 100%;
+  width: 95%;
   position: absolute;
   text-align: left;
   margin-top: 10px;
@@ -571,31 +573,35 @@ animation: slideRight 1s 0.25s ease forwards;
   font-size: 18px;
   font-weight: 500;
   animation: slideLeft 0.5s 0.3s ease-in;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .box{
   height: 170px;
   width: 50vw;
 padding-bottom: 25px;
-  margin: 24px 24vw;
 
-  border: 2px solid cyan;
+ border: 2px solid cyan;
   border-radius: 20px;
   box-shadow: 0 0 5px cyan,0 0 10px cyan ,0 0 50px cyan ,0 0 50px cyan;
 
 }
 .gmail,.number,.git{
-  margin: 20px;
+  margin: 20px 0px;
   font-size: 25px;
 }
 
 .icon{
-  margin-left: 40vw;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 40px;
-  gap:10px;
+  gap:100px;
   height: 100px;
-  width: 300px;
+  width: 100%;
+  align-items: center;
 
 } 
 .icon a i{
@@ -621,24 +627,6 @@ margin-right: 8px;
   border: 2px cyan;
   text-shadow: 0 0 5px,
   0 0 20px, 0 0 20px  cyan; 
-}
-.submit{
-  width: 200px;
-  background: cyan;
-  font-size: 20px;
-  font-weight: 700;
-color: rgb(0, 98, 255);
-  height: 50px;
-  border-radius: 40px;
-  margin-left: 220px;
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
-  border: none;
-  animation: slideLeft 1s ease;
-}
-.submit:hover{
- 
- box-shadow: 0 0 5px,
-  0 0 20px, 0 0 50px  cyan; 
 }
 
 /* footer */
@@ -743,9 +731,35 @@ opacity: 1;
    stroke-dashoffset: 75;
  }
 }
+@media(max-width:1100px){
+  .About-me{
+    height: 115vh;
+  }
 
+}
+@media(max-width:560px){
+  .btn{
+    margin-left: 139px;
+  }
+ 
 
-@media (max-width: 768px) {
+  }
+@media(max-width:1145px){
+.cards p{
+  font-size: 18px;
+}
+.box div{
+  font-size: 22px;
+}
+.cards h1{
+  font-size: 25px;
+}
+.container{
+  margin: 40px;
+  gap: 20px;
+}
+}
+@media only screen and (max-width: 768px) {
   header {
     height: auto; 
     flex-direction: column; 
@@ -770,7 +784,7 @@ opacity: 1;
   }
   .Home {
     width: 100%; 
-    height: 90vh;
+    height: 80vh;
   }
 
   .picture-container {
@@ -817,6 +831,7 @@ gap: 60px;
     height: 160vh;
   }
 
+
   .myself {
     width: 80%; 
     height: auto; 
@@ -831,7 +846,7 @@ gap: 60px;
 
 
   #services-section{
-    height: 170vh;
+    height: 150vh;
   }
   .services {
     font-size: 40px;
@@ -841,12 +856,12 @@ gap: 60px;
    .container {
     flex-direction: column;
     align-items:self-start; 
-    margin: 60px;
-  
+    margin: 60px 10px;
+  height: 100vh;
   } 
 
    .cards {
-    width: 90%; 
+    width: 95%; 
     max-width: 100%; 
   } 
   .cards p{
@@ -887,11 +902,19 @@ gap: 60px;
       margin-right: 30px;
     }
   
-    .Technical-bars .bar,
-    .radial-bars  {
+    .Technical-bars .bar
+  {
       width: 100%; 
     }
-  
+    .radial-bars{
+      width: 87%;
+    }
+    .radial-bar{
+      width: 40%;
+    }
+    .radial-bars .radial-bar svg {
+      width: 150px;
+    }
     .progress-line span::after {
       top: -15px; 
     }
@@ -962,20 +985,20 @@ gap: 60px;
 }
   .icon {
     font-size: 40px;
-    width: 250px;
-    margin-left: 130px;
+    gap: 30px;
   }
   .box{
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+   margin: 20px 0px;
   }
   .gmail, .number,.git{
-    font-size: 20px;
+    font-size: 18px;
   }
-.git a{
-  font-size: 16px;
-}
 
+
+  .box div{
+    font-size: 16px;
+  }
 
 
   footer{
@@ -988,16 +1011,34 @@ gap: 60px;
     padding-left: 12px;
   }
 }
-@media(max-width:530px){
-  .btn {
-    margin-left:120px; 
-    width: 50%; 
-  }
-  
- 
+
+
+
+@media(max-width:690px){
+  .btn{
+  margin-left: 190px;
 }
-@media(max-width:768px)and(min-width:530px){
+
+}
+
+@media(max-width:450px){
   .btn{
     margin-left: 80px;
   }
+
+  .radial-bars .radial-bar svg {
+    width: 110px;
+  }
+  .photo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .container{
+    margin-left: 0px;
+  }
+  
+  .git a{
+    font-size: 12px;
+  } 
 }
